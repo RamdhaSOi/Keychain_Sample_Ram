@@ -21,6 +21,11 @@
 		4F0B507B1925EA10003DD587 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F0B505D1925EA10003DD587 /* UIKit.framework */; };
 		4F0B50831925EA10003DD587 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F0B50811925EA10003DD587 /* InfoPlist.strings */; };
 		4F0B50851925EA10003DD587 /* Keychain_Sample_RamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0B50841925EA10003DD587 /* Keychain_Sample_RamTests.m */; };
+		4F0B508F1925ED8C003DD587 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F0B508E1925ED8C003DD587 /* Security.framework */; };
+		4F0B50911925ED9D003DD587 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F0B50901925ED9D003DD587 /* Twitter.framework */; };
+		4F0B50941925F4BE003DD587 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F0B50921925F4BE003DD587 /* Default.png */; };
+		4F0B50951925F4BE003DD587 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F0B50931925F4BE003DD587 /* Default@2x.png */; };
+		4FCDEEF31927256200B90488 /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCDEEF21927256200B90488 /* KeychainWrapper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,13 @@
 		4F0B50801925EA10003DD587 /* Keychain_Sample_RamTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Keychain_Sample_RamTests-Info.plist"; sourceTree = "<group>"; };
 		4F0B50821925EA10003DD587 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4F0B50841925EA10003DD587 /* Keychain_Sample_RamTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Keychain_Sample_RamTests.m; sourceTree = "<group>"; };
+		4F0B508E1925ED8C003DD587 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		4F0B50901925ED9D003DD587 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		4F0B50921925F4BE003DD587 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		4F0B50931925F4BE003DD587 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		4FCDEEF11927256200B90488 /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
+		4FCDEEF21927256200B90488 /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
+		4FCDEEF41927259900B90488 /* ChristmasConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChristmasConstants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F0B50911925ED9D003DD587 /* Twitter.framework in Frameworks */,
+				4F0B508F1925ED8C003DD587 /* Security.framework in Frameworks */,
 				4F0B505C1925EA10003DD587 /* CoreGraphics.framework in Frameworks */,
 				4F0B505E1925EA10003DD587 /* UIKit.framework in Frameworks */,
 				4F0B505A1925EA10003DD587 /* Foundation.framework in Frameworks */,
@@ -101,6 +115,8 @@
 		4F0B50581925EA10003DD587 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4F0B50901925ED9D003DD587 /* Twitter.framework */,
+				4F0B508E1925ED8C003DD587 /* Security.framework */,
 				4F0B50591925EA10003DD587 /* Foundation.framework */,
 				4F0B505B1925EA10003DD587 /* CoreGraphics.framework */,
 				4F0B505D1925EA10003DD587 /* UIKit.framework */,
@@ -112,6 +128,11 @@
 		4F0B505F1925EA10003DD587 /* Keychain_Sample_Ram */ = {
 			isa = PBXGroup;
 			children = (
+				4FCDEEF41927259900B90488 /* ChristmasConstants.h */,
+				4FCDEEF11927256200B90488 /* KeychainWrapper.h */,
+				4FCDEEF21927256200B90488 /* KeychainWrapper.m */,
+				4F0B50921925F4BE003DD587 /* Default.png */,
+				4F0B50931925F4BE003DD587 /* Default@2x.png */,
 				4F0B50681925EA10003DD587 /* AppDelegate.h */,
 				4F0B50691925EA10003DD587 /* AppDelegate.m */,
 				4F0B506B1925EA10003DD587 /* Main.storyboard */,
@@ -230,7 +251,9 @@
 			files = (
 				4F0B50721925EA10003DD587 /* Images.xcassets in Resources */,
 				4F0B50641925EA10003DD587 /* InfoPlist.strings in Resources */,
+				4F0B50951925F4BE003DD587 /* Default@2x.png in Resources */,
 				4F0B506D1925EA10003DD587 /* Main.storyboard in Resources */,
+				4F0B50941925F4BE003DD587 /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F0B50701925EA10003DD587 /* ViewController.m in Sources */,
+				4FCDEEF31927256200B90488 /* KeychainWrapper.m in Sources */,
 				4F0B506A1925EA10003DD587 /* AppDelegate.m in Sources */,
 				4F0B50661925EA10003DD587 /* main.m in Sources */,
 			);
@@ -460,6 +484,7 @@
 				4F0B508A1925EA10003DD587 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4F0B508B1925EA10003DD587 /* Build configuration list for PBXNativeTarget "Keychain_Sample_RamTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +493,7 @@
 				4F0B508D1925EA10003DD587 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

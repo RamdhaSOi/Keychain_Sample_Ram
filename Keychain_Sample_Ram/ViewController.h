@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITextFieldDelegate,UIAlertViewDelegate>
+
+@property (nonatomic) BOOL pinValidated;
+
+- (IBAction)Submit:(id)sender;
+@property (strong, nonatomic) IBOutlet UITextField *UserName;
+@property (strong, nonatomic) IBOutlet UITextField *Password;
 
 @end
